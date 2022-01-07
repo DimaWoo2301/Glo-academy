@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "MuseoCyrl";
+  src: url("../fonts/MuseoCyrl-300.woff") format("woff"),
+    url("../fonts/MuseoCyrl-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+    url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
