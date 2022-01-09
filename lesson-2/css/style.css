@@ -39,6 +39,10 @@ img {
   display: none;
 }
 
+.navbar-mobile {
+  display: none;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -66,9 +70,55 @@ img {
   font-size: 14px;
 }
 
+.navbar-menu__link__mobile {
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-menu__mobile {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 320px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navbar-menu_item__mobile {
+  padding-bottom: 20px;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+
+.navbar__search__mobile {
+  width: 243px;
+  height: 40px;
+  margin-bottom: 39px;
+}
+
+.navbar__user__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 31px;
 }
 
 .logo {
@@ -129,6 +179,14 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.user__name__mobile {
+  padding-top: 10px;
+  padding-bottom: 27px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -490,7 +548,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding: 20px 0;
@@ -498,6 +555,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
   .logo {
     width: 132px;
@@ -526,6 +586,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
     width: 16px;
     height: 11px;
     border: none;
@@ -542,6 +603,17 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
