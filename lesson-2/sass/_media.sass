@@ -1,0 +1,46 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 960px
+@media (max-width: 960px)
+  .container
+    max-width: 700px
+  .navbar
+    &-top
+     padding-top: 30px
+     padding-bottom: 30px
+    &__search
+      margin-left: auto
+      max-width: 340px
+    &-menu
+      padding: 20px 0
+      &__link
+        font-size: 12px
+        line-height: 15px
+  .logo
+    width: 132px
+@media ( max-width: 768px  )
+  .container
+    max-width: 576px
+    max-width: 92%
+
+  .navbar
+    &__search,&-menu,&__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-direction: column
+      width: 16px
+      height: 11px
+      border: none
+      cursor: pointer
+      background-color: #fff
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+@media  (max-width: 576px)
+  .logo
+    width: 99px
