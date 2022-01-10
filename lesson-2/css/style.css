@@ -4,6 +4,7 @@
 }
 
 body {
+  background-color: #F5FAFE;
   font-family: 'Muli',sans-serif;
   color: #333333;
 }
@@ -15,6 +16,30 @@ img {
 .container {
   max-width: 1110px;
   margin: auto;
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 18px 0;
+  margin: 0;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  colot: inherit;
 }
 
 .navbar {
@@ -209,6 +234,97 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #fff;
+}
+
+.hotel-info {
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-info__name {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-info__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.hotel-info__rattings {
+  font-size: 8px;
+  line-height: 10px;
+  color: #fff;
+}
+
+.hotel-info__number {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.hotel-info__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+}
+
+.hotel-info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-info__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 3px;
+  margin-left: 14px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #fff;
+  background-color: #EC1F46;
+}
+
+.hotel-info__stars {
+  width: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
