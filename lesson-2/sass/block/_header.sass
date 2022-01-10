@@ -7,7 +7,20 @@
      padding-top: 40px
      padding-bottom: 40px
      &__menu-button
-       display: none
+      display: none
+      justify-content: space-between
+      align-items: center
+      flex-direction: column
+      padding: 0
+      width: 16px
+      height: 11px
+      border: none
+      cursor: pointer
+      background-color: #fff
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
   &-mobile
     display: none
   &-bottom
@@ -39,10 +52,10 @@
       min-height: 320px
       padding-left: 0
       margin: 0
-    &_item
+    &__item
       &__mobile
         padding-bottom: 20px
-  &__search
+  &__search 
     margin-right: auto  
     margin-left: 108px 
     &__mobile
