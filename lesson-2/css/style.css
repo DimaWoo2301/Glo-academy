@@ -330,19 +330,13 @@ img {
 }
 
 .hotel-grid {
-  height: 450px;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "slider pricecard" "slider map";
-  -ms-grid-columns: 728px 350px;
-      grid-template-columns: 728px 350px;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  grid-gap: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .swiper {
-  width: 100%;
+  width: 728px;
   height: 450px;
   border-radius: 8px;
 }
@@ -362,12 +356,7 @@ img {
 }
 
 .slider {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: slider;
-  width: 728px;
-  height: 100%;
+  padding-right: 29px;
 }
 
 .slider-button {
@@ -398,15 +387,14 @@ img {
 }
 
 .booking {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: pricecard;
   background-color: #0A223D;
   border-radius: 8px;
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 210px;
   color: #fff;
   font-family: Nunito;
+  padding-bottom: 30px;
 }
 
 .booking__number {
@@ -490,7 +478,7 @@ img {
   padding-bottom: 8px;
 }
 
-.cas {
+.booking-container__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,13 +488,21 @@ img {
 }
 
 .test-map {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: map;
-  width: 100%;
-  height: 100%;
+  margin-top: 27px;
+  width: 347px;
+  height: 213px;
   background-color: red;
   border-radius: 9px;
+}
+
+.container-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
