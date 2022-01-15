@@ -445,8 +445,7 @@ img {
 
 .booking-button {
   cursor: pointer;
-  width: 295px;
-  height: 45px;
+  padding: 13px 84px;
   background-color: #EC1F46;
   border: none;
   color: #fff;
@@ -770,6 +769,9 @@ img {
 
 .activities__img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -779,27 +781,11 @@ img {
 
 .activities-block {
   width: 255px;
-  height: 255px;
+  min-height: 255px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-}
-
-.activities-block::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
-}
-
-.activities-block__item {
-  position: relative;
-  height: 255px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,9 +802,21 @@ img {
           align-items: flex-start;
 }
 
+.activities-block::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
 .activities-block__text {
   margin-bottom: 18px;
-  font-style: bold;
+  font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   line-height: 100%;
@@ -1197,10 +1195,6 @@ template {
   }
   .activities-block {
     width: 215px;
-    height: 215px;
-  }
-  .activities-block__item {
-    height: 215px;
   }
 }
 
@@ -1269,11 +1263,7 @@ template {
   }
   .activities-block {
     width: 340px;
-    height: 255px;
     margin-bottom: 20px;
-  }
-  .activities-block__item {
-    height: 255px;
   }
 }
 
@@ -1380,7 +1370,6 @@ template {
   }
   .activities-block {
     width: 280px;
-    height: 255px;
     margin-bottom: 20px;
     margin-right: 20px;
   }
@@ -1407,7 +1396,6 @@ template {
   }
   .activities-block {
     width: 300px;
-    height: 255px;
     margin-bottom: 20px;
     margin-right: 0px;
   }
