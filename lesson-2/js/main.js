@@ -19,8 +19,8 @@ const reviewsSlider = new Swiper(".reviews-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider__button-next",
-    prevEl: ".slider__button-prev",
+    nextEl: ".reviews-slider__button-next",
+    prevEl: ".reviews-slider__button-prev",
   },
   keyboard: {
     enabled: true,
