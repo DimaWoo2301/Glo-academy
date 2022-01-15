@@ -68,7 +68,20 @@
   .container
     max-width: 576px
     max-width: 92%
+  body
+    padding-top: 80px
   .navbar
+    &-mobile
+      display: block
+      height: 100%
+      &__fixed
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        z-index: 99
+        height: 80px
     &__search,&-menu,&__user
       display: none
   .menu

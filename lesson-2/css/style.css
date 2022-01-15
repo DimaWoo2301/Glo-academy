@@ -142,7 +142,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 320px;
+  min-height: 720px;
   padding-left: 0;
   margin: 0;
 }
@@ -1271,6 +1271,22 @@ template {
   .container {
     max-width: 576px;
     max-width: 92%;
+  }
+  body {
+    padding-top: 80px;
+  }
+  .navbar-mobile {
+    display: block;
+    height: 100%;
+  }
+  .navbar-mobile__fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 80px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;

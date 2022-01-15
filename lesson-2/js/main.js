@@ -27,3 +27,10 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
+
+var mebuButton = document.querySelector(".menu-button");
+mebuButton.addEventListener("click", function () {
+  console.log("Клик по кномпе");
+  document.querySelector(".navbar-mobile").toggleAttribute("hidden");
+  document.querySelector(".navbar-bottom").toggleAttribute("hidden");
+});
