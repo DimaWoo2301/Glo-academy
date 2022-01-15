@@ -10,6 +10,13 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .activities
+    &-block
+      width: 215px
+      height: 215px
+      &__item
+        height: 215px
+
 @media (max-width: 960px)
   .container
     max-width: 700px
@@ -53,6 +60,15 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &-block
+      width: 340px
+      height: 255px
+      margin-bottom: 20px
+      &__item
+        height: 255px
 
 @media ( max-width: 768px  )
   .container
@@ -118,6 +134,14 @@
         padding: 0 30px 30px
         &::after,&::before
           display: none
+  .activities
+    &-wrapper
+      justify-content: center
+    &-block
+      width: 280px
+      height: 255px
+      margin-bottom: 20px
+      margin-right: 20px  
       
 @media  (max-width: 576px)
   .logo
@@ -130,6 +154,14 @@
     width: 100%
   .newsletter
     padding: 76px 0 83px 8
+  .activities
+    &-wrapper
+      justify-content: center
+    &-block
+      width: 300px
+      height: 255px
+      margin-bottom: 20px
+      margin-right: 0px  
 
 
 

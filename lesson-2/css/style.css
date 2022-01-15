@@ -398,7 +398,6 @@ img {
 }
 
 .hotel .swiper {
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -748,6 +747,96 @@ img {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+}
+
+.activities__title {
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.activities__img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.activities-block {
+  width: 255px;
+  height: 255px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.activities-block::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.activities-block__item {
+  position: relative;
+  height: 255px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 26px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.activities-block__text {
+  margin-bottom: 18px;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 20px;
+  line-height: 100%;
+  color: #fff;
+  z-index: 1;
+  font-style: normal;
+}
+
+.activities-block__button {
+  cursor: pointer;
+  z-index: 1;
+  padding: 7px 22px;
+  background-color: #EC1F46;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1106,6 +1195,13 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .activities-block {
+    width: 215px;
+    height: 215px;
+  }
+  .activities-block__item {
+    height: 215px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1166,6 +1262,18 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities-block {
+    width: 340px;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .activities-block__item {
+    height: 255px;
   }
 }
 
@@ -1265,6 +1373,17 @@ template {
   .reviews-slider__item::after, .reviews-slider__item::before {
     display: none;
   }
+  .activities-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activities-block {
+    width: 280px;
+    height: 255px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1280,6 +1399,17 @@ template {
   }
   .newsletter {
     padding: 76px 0 83px 8;
+  }
+  .activities-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activities-block {
+    width: 300px;
+    height: 255px;
+    margin-bottom: 20px;
+    margin-right: 0px;
   }
 }
 
