@@ -397,6 +397,12 @@ img {
   background-image: url(../img/arrow-prev.png);
 }
 
+.hotel .swiper {
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .booking {
   grid-area: pricecard;
   background-color: #0A223D;
@@ -635,7 +641,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -1091,7 +1097,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     width: 600px;
   }
   .swiper-slide__image {
@@ -1132,7 +1138,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .slider {
+  .hotel-slider {
     width: 700px;
     padding-right: 0;
   }
@@ -1157,6 +1163,9 @@ template {
   }
   .booking-container {
     padding: 20px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1206,14 +1215,14 @@ template {
   .hotel-info__left {
     width: 100%;
   }
+  .hotel-slider {
+    height: 350px;
+    width: 100%;
+  }
   .booking {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
-  }
-  .slider {
-    height: 350px;
-    width: 100%;
   }
   .container-map {
     -webkit-box-orient: vertical;
@@ -1235,13 +1244,34 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reviews-slider__button {
+    top: 30px;
+  }
+  .reviews-slider__button-prev {
+    left: 50%;
+    margin-left: -65px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button-next {
+    right: 50%;
+    margin-right: -93px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 250px;
   }
   .subscribe {
