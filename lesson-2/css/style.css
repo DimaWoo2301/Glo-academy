@@ -340,14 +340,23 @@ img {
   display: flex;
 }
 
-.swiper {
+.hotel-slider {
+  width: 757px;
+  height: 450px;
+  padding-right: 29px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.hotel-slider__item {
   width: 100%;
   height: 100%;
   position: relative;
   border-radius: 8px;
+  overflow: hidden;
 }
 
-.swiper::after {
+.hotel-slider__item::after {
   content: '';
   width: 100%;
   height: 100%;
@@ -361,13 +370,7 @@ img {
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
 }
 
-.slider {
-  width: 757px;
-  height: 450px;
-  padding-right: 29px;
-}
-
-.slider-button {
+.hotel-slider__button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -384,12 +387,12 @@ img {
   background-color: transparent;
 }
 
-.slider-button-next {
+.hotel-slider__button-next {
   right: 18px;
   background-image: url(../img/arrow-next.png);
 }
 
-.slider-button-prev {
+.hotel-slider__button-prev {
   left: 18px;
   background-image: url(../img/arrow-prev.png);
 }
@@ -515,13 +518,14 @@ img {
 }
 
 .newsletter {
+  position: fixed;
   margin-top: 70px;
   position: relative;
   padding: 98px 0 87px 0;
   background-image: url(../img/rectamgle.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
 }
 
 .newsletter-wrapper {
