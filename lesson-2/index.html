@@ -263,7 +263,7 @@
                     <span class="booking__number">12100</span>
                   </div>
                 </div>
-                <button class="booking-button">View Other Options</button>
+                <button data-toggle="modal" class="booking-button">View Other Options</button>
               </div>
             </div>
             <div class="map">
@@ -464,6 +464,26 @@
         </div>
       </div>
     </section>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="/img/close.svg" alt="icon: close">
+        </a>
+        <form class="modal-form" action="">
+          <h3 class="modal__title">Booking</h3>
+          <input placeholder="Your Full Name*" class="modal__input" type="text">
+          <input placeholder="Phone Number*" class="modal__input" type="text">
+          <input placeholder="Email*" class="modal__input" type="text">
+          <textarea placeholder="Message" class="modal__input__messenge" name="messenge"></textarea>
+          <div>
+            <button class="modal__button">Send</button>   
+            <span class="modal__text">* Required Fields</span>
+          </div>    
+        </form>
+      </div>
+    </div>
+    <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
