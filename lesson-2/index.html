@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
@@ -49,7 +50,7 @@
           </button>
         </div>
       </div>
-      <div class="navbar-bottom">
+      <div class="navbar-button">
         <div class="container">
           <ul class="navbar-menu">
             <li class="navbar-menu__item">
@@ -403,7 +404,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="activities-block">
+          <div class="activities-block" data-aos="fade-up" data-aos-delay='300'>
             <img
               class="activities__img"
               src="/img/activities-img-bar.svg"
@@ -414,7 +415,7 @@
             </p>
             <button class="activities-block__button">Book Now</button>
           </div>
-          <div class="activities-block">
+          <div class="activities-block" data-aos="fade-up" data-aos-delay='500'>
             <img
               class="activities__img"
               src="/img/activities-img-golf.svg"
@@ -425,7 +426,7 @@
             </p>
             <button class="activities-block__button">Book Now</button>
           </div>
-          <div class="activities-block">
+          <div class="activities-block" data-aos="fade-up" data-aos-delay='700'>
             <img
               class="activities__img"
               src="/img/activities-img-waterfall.svg"
@@ -436,7 +437,7 @@
             </p>
             <button class="activities-block__button">Book Now</button>
           </div>
-          <div class="activities-block">
+          <div class="activities-block" data-aos="fade-up" data-aos-delay='900'>
             <img
               class="activities__img"
               src="/img/activities-img-sea.svg"
@@ -483,7 +484,14 @@
         </form>
       </div>
     </div>
-    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
